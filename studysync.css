@@ -103,3 +103,122 @@ body{
     height:1.5rem;
     width: 1.5rem;
 }
+.main-section{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.6rem;
+    margin: 0 auto;
+}
+.content-left{
+    text-align: center;
+    animation: slideFromLeft 1s ease forwards;
+    opacity: 0;
+}
+@keyframes slideFromLeft {
+
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.section-label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--link-color);
+}
+.section-title{
+    font-size: 2.3rem;
+    color: var(--text-color);
+    padding: 1.1rem;
+}
+.section-description{
+    color: var(--gray);
+    font-size: 1.13rem;
+}
+.button-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top:1rem ;
+    gap: 2rem;
+    padding: 1rem;
+}
+.start-button{
+    border: none;
+    border-radius: 0.376rem;
+    background-color: var(--primary-color);
+    color:var(--background-color);
+    transform: all 0.1s;
+    padding: 0.76rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.tour-button{
+    border: none;
+    border-radius: 0.376rem;
+    background-color: var(--dark-gray);
+    color:var(--background-color);
+    transform: all 0.1s;
+    padding: 0.76rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.start-button:hover{
+    background-color: #5254f8;
+}
+.tour-button:hover{
+    background-color: grey;
+}
+.content-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image-container{
+    border:none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    height: 50vh;
+}
+.image-section{
+    height: 100%;
+    width: 100%;
+}
+@media screen and (min-width:768px){
+    .main-section{
+        flex-direction: row;
+    }
+    .content-left{
+        max-width: 50%;
+        text-align: left;
+    }
+    .section-title{
+        padding-left: 0;
+        font-size: 3rem;
+    }
+    .section-label{
+        font-size: 1rem;
+    }
+    .section-description{
+        font-size: 1rem;
+        color: var(--gray);
+        width:78%;
+    }
+    .button-group{
+        justify-content: start;
+        flex-direction: row;
+        padding-left: 0;
+    }
+    .image-container{
+        height: 67vh;
+    }
+}
