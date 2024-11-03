@@ -222,3 +222,41 @@ body{
         height: 67vh;
     }
 }
+.company-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    animation: slideFromLeft 1s ease forwards;
+}
+.company-grid{
+    border: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3.6rem;
+    padding: 1rem;
+    background-color: var(--light-gray);
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    padding: 1.8rem 2.5rem;
+}
+.company-logo{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gray);
+    display: flex;
+    gap: 0.5rem;
+}
+.svg-img{
+    height: 1.56rem;
+    
+}
+.loogo-text{
+    font-size: 1rem;
+}
+@media screen and (min-width:768px) {
+    .company-grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+}   
