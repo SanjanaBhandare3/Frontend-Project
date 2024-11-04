@@ -348,3 +348,54 @@ body{
         grid-template-columns: repeat(1,1fr);
     }
 }
+.testimonial-container{
+    background-color: var(--background-color);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.testimonal-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.testtitle{
+    font-weight: bold;
+    font-size: 1.875rem;
+}
+.Testimonial-Grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 2rem;
+}
+.testimonial-card{
+    border: 1px solid rgb(171,163,163);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1.2rem;
+    gap: 1rem;
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
+}
+.testimonial-card:hover{
+    transform: scale(1.05);;
+    box-shadow: 0 4px 8px rbga(0,0,0,0.2);
+    border: 1px solid blue;
+}
+.testimonial-text{
+    color: #555;
+    font-size: 0.87rem;
+}
+.avatar-svg{
+    height: 5rem;
+    width: 5rem;
+}
+.testimonal-name{
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+.testimonal-descrip{
+    font-size: 0.87rem;
+    color: #777;
+}
