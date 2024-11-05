@@ -492,3 +492,112 @@ body{
         font-size: 2.5rem;
     }
 }
+.footer-container{
+    max-width: 1200px;
+    background-color: var(--background-color);
+    margin: 0 auto;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.footer-content{
+    max-width: 1200px;
+    padding: 1.2rem 2.4rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+.footer-top{
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.comp-logo{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: -1.9rem;
+}
+.studysync-logo{
+    height: 6rem;
+    width: 2rem;
+}
+.logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+}
+.social-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.foot-toptxt{
+    font-size: 1.3rem;
+    color: #777;
+}
+.socialimg{
+    display: flex;
+    gap: 0.8rem;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width:59%;
+    gap: 5.7rem;
+    padding-top: 2rem;
+}
+.footer-head{
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 1.05rem;
+    margin-bottom: 1.65rem;
+}
+ul{
+    list-style-type: none;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.footer-link{
+    color: #777;
+    font-size: 0.87rem;
+}
+.footer-copyright{
+    color: var(--gray);
+    padding-top: 1.25rem;
+    padding-bottom: 2rem; 
+    margin-top: 2rem;
+    border-top: 1px solid #E5E7EB;
+}
+@media screen and(max-width:1080px) {
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-top{
+        padding-left: 10rem;
+    }
+    .footer-grid{
+        align-self: center;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width:880px) {
+    .footer-top{
+        padding-left: 1rem;
+    }
+    .footer-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+}
