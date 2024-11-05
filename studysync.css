@@ -399,3 +399,96 @@ body{
     font-size: 0.87rem;
     color: #777;
 }
+.newsletter-container{
+    max-width: 1200px;
+    background-color: var(--background-color);
+    height:50vh;
+    margin: 0 auto;
+}
+.newsletter-content{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--light-gray);
+    height: 100%;
+    border-radius: 8px;
+}
+.newsletterleftbox{
+    height: 100%;
+    width: 50%;
+}
+.newsletterleftbox img{
+    height: 100%;
+    width: 100%;
+}
+.newsletter-rightbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    gap: 1rem;
+    padding: 4rem;
+}
+@media screen and (min-width:768px) {
+    .newsletterleftbox{
+        display: block;
+        width: 50%;
+    }
+    .newsletter-rightbox{
+        width: 50%;
+    }
+    .newsletter-container{
+        padding: 2rem;
+    }
+}
+.right-title{
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.right-descrip{
+    text-align: left;
+    color:#777;
+}
+.n-form{
+    padding: 0.3rem;
+    gap: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.news-email{
+    background-color: var(--background-color);
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5 0.75;
+}
+.news-email:focus{
+    border-color: #2563eb;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.send-button{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+}
+.send-button:hover{
+    background-color: var(--link-color);
+}
+.privacy-policy{
+    font-size: 0.78rem;
+    padding: 0.3rem;
+    color: #777;
+}
+.new-link{
+    text-decoration: underline;
+    color: #2563eb;
+}
+@media screen and (min-width:768px) {
+    .right-title{
+        font-size: 2.5rem;
+    }
+}
